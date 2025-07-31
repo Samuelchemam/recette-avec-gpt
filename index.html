@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Un livre de recettes optimisé et facile d'accès avec une recherche intégrée."
+    />
+    <title>Mon livre de recettes</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Lien d'évitement pour passer directement au contenu -->
+    <a href="#principal" class="skip-link">Aller directement au contenu</a>
+    <header>
+      <div class="hero" role="img" aria-label="Motifs culinaires abstraits colorés">
+        <h1>Mon livre de recettes</h1>
+        <p>Recettes faciles &nbsp;·&nbsp; délicieuses &nbsp;·&nbsp; accessibles</p>
+      </div>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#recettes">Toutes les recettes</a></li>
+          <li><a href="#petit-dejeuner">Petit‑déjeuner</a></li>
+          <li><a href="#dejeuner">Déjeuner</a></li>
+          <li><a href="#diner">Dîner</a></li>
+          <li><a href="#desserts">Desserts</a></li>
+        </ul>
+        <form role="search" aria-label="Recherche de recettes">
+          <label for="recherche" class="visually-hidden">Rechercher</label>
+          <input
+            type="search"
+            id="recherche"
+            placeholder="Rechercher..."
+            aria-label="Champ de recherche"
+          />
+        </form>
+      </nav>
+    </header>
+    <main id="principal">
+      <section id="recettes">
+        <h2 class="section-title">Recettes</h2>
+        <div class="recipe-grid">
+          <article
+            class="recipe-card"
+            tabindex="0"
+            aria-labelledby="pancakes-title"
+            data-tags="petit-dejeuner sucré"
+          >
+            <img
+              src="images/icon-noodle.jpg"
+              alt="Illustration de pancakes"
+            />
+            <h3 id="pancakes-title">Pancakes moelleux</h3>
+            <p>
+              De délicieux pancakes à base de farine, lait, œufs et une pointe de
+              vanille pour des matins tout doux.
+            </p>
+          </article>
+          <article
+            class="recipe-card"
+            tabindex="0"
+            aria-labelledby="salade-title"
+            data-tags="dejeuner salade"
+          >
+            <img
+              src="images/icon-noodle.jpg"
+              alt="Illustration de salade César"
+            />
+            <h3 id="salade-title">Salade César</h3>
+            <p>
+              La salade César classique avec de la laitue croquante, du poulet
+              grillé, des croûtons et une sauce crémeuse maison.
+            </p>
+          </article>
+          <article
+            class="recipe-card"
+            tabindex="0"
+            aria-labelledby="gateau-title"
+            data-tags="desserts chocolat"
+          >
+            <img
+              src="images/icon-noodle.jpg"
+              alt="Illustration de gâteau au chocolat"
+            />
+            <h3 id="gateau-title">Gâteau au chocolat</h3>
+            <p>
+              Un gâteau au chocolat fondant avec une ganache riche, facile à
+              préparer pour épater vos invités.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;&nbsp;2025&nbsp;Mon&nbsp;Livre&nbsp;de&nbsp;Recettes</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
